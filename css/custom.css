@@ -55,6 +55,9 @@ main img{
   width: 65%;
   border-radius: 2em;
 }
+main a:hover, main button:hover{
+  background-color: hsl(285, 88%, 66%)!important;
+}
 .cartaBorde{
   border: 0!important;
   padding: 0!important;
