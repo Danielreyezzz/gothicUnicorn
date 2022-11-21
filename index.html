@@ -1,0 +1,223 @@
+<!-- OBSERVACIONES DEL AUTOR 
+  
+Al ser una práctica cuyo objetivo es aprender las funcionalidades de Bootstrap 5
+he optado por no complicar el ejercicio con otros lenguajes de programación.
+Todos los componentes de la página han sido maquetados y estilizados utilizando Boostrap 5.
+Se ha incluido un pequeñito script para la barra de navegación
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script defer src="js/bootstrap.bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap"rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"crossorigin="anonymous"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    
+    <script defer src="js/custom.js"></script>
+    <script defer src="js/sweet.js"></script>  
+    <title>Gothic Unicorn</title>
+  </head>
+  <body>
+    <div>
+    <nav id="navbar" class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#cabeza">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Gothic Unicorn</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <img class="w-50 d-flex justify-content-center align-items-center mx-auto" src="img/logo.png" alt="logo">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link h5" href="#tienda">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link h5" href="#formulario">Formulario</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link h5" href="#contacto">Contacto</a>
+              </li>
+            
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
+              <button class="btn btn-success goticColor" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <header>
+      <div id="cabeza" class="cabeza">
+        <div class="container-fluid text-center d-flex flex-column justify-content-center align-items-center">
+          <img class="logo" src="img/logo.png" alt="logo" />
+        </div>
+      </div>
+    </header>
+    
+
+    <main  id="tienda" class="container-fluid border border-3 border-dark">
+      <h1 class="text-center py-5">
+        Tienes un Unicornio Gótico en tu interior
+      </h1>
+      <h2 class="text-center py-2 mb-5">
+        Solo tienes que explorarlo
+      </h2>
+      <div class="row justify-content-center align-items-center g-3 mb-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 card cartaBorde">
+            <h5 class="card-header text-center bg-dark text-white">Today is Fantasy Day</h5>
+            <div class="card-body d-flex border border-3 border-dark flex-column justify-content-center align-items-center">
+              <img src="img/cami1.png" alt="cami1">
+              <p class="card-text text-center">Transmite tu estado de ánimo. Hoy pasarán cosas fantasticas</p>
+              <a href="#" class="btn goticColor">AÑADIR AL CARRITO</a>
+            </div>
+          </div>
+       
+        
+
+          <div class="col-lg-4 col-md-6 col-sm-12 card cartaBorde ">
+            <h5 class="card-header text-center bg-dark text-white">Inside-out </h5>
+            <div class="card-body d-flex border border-3 border-dark flex-column justify-content-center align-items-center">
+              <img src="img/cami2.png" alt="cami1">
+              <p class="card-text text-center">Un reflejo exacto del estado de tu alma</p>
+              <a href="#" class="btn goticColor">AÑADIR AL CARRITO</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 card cartaBorde">
+            <h5 class="card-header text-center bg-dark text-white">Pretending White</h5>
+            <div class="card-body d-flex border border-3 border-dark flex-column justify-content-center align-items-center">
+              <img src="img/cami3.png" alt="cami1">
+              <p class="card-text text-center">Engaña a tu entorno. Camufla el interior de tu corazón</p>
+              <a href="#" class="btn goticColor">AÑADIR AL CARRITO</a>
+            </div>
+          </div>
+       
+     
+      
+          <div class="col-lg-4 col-md-6 col-sm-12 card cartaBorde">
+            <h5 class="card-header text-center bg-dark text-white">No-bottom Bag</h5>
+            <div class="card-body d-flex border border-3 border-dark flex-column justify-content-center align-items-center">
+              <img src="img/bolsa.png" alt="cami1">
+              <p class="card-text text-center">Aquí cabe todo. Incluso toda la oscuridad de tu alma</p>
+              <a href="#" class="btn goticColor">AÑADIR AL CARRITO</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 card cartaBorde">
+            <h5 class="card-header text-center bg-dark text-white">Eternal Life Potion</h5>
+            <div class="card-body d-flex border border-3 border-dark flex-column justify-content-center align-items-center">
+              <img src="img/botella.png" alt="cami1">
+              <p class="card-text text-center">Ahora puedes llevar contigo el secreto de tu inmortalidad</p>
+              <a href="#" class="btn goticColor">AÑADIR AL CARRITO</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 card cartaBorde">
+            <h5 class="card-header text-center bg-dark text-white">Souls Mug</h5>
+            <div class="card-body d-flex border border-3 border-dark flex-column justify-content-center align-items-center">
+              <img src="img/taza.png" alt="cami1">
+              <p class="card-text text-center">Recipiente tan opaco que nadie sabrá su oscuro contenido</p>
+              <a href="#" class="btn goticColor">AÑADIR AL CARRITO</a>
+            </div>
+          </div>
+       
+      </div>
+
+
+<div id="formulario" class="d-flex flex-column justify-content-center align-items-center formulario ">
+  
+      <form class="row g-3 needs-validation container-fluid py-3 mt-5 bg-dark formulario mb-5" novalidate>
+        <div class="container">
+        <h2 class="text-white text-center mb-5">Mantente en contacto con nosotros y te mandaremos las ofertas más oscuras</h2>
+      </div>
+        <div class="col-md-4 col-sm-12">
+          <label for="validationCustom01" class="form-label text-white">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Daniel" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <label for="validationCustom02" class="form-label text-white">Apellidos</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Reyes Pérez" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <label for="validationCustomUsername" class="form-label text-white">Email</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor, introduzca un email válido
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-12">
+          <label for="validationCustom03" class="form-label text-white">Ciudad</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Por favor, seleccione una ciudad válida
+          </div>
+        </div> 
+        <div class="col-md-3 col-sm-12">
+          <label for="validationCustom03" class="form-label text-white">CP</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Por favor, seleccione una ciudad válida
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label text-white" for="invalidCheck">
+              Acepto los terminos y condiciones
+            </label>
+            <div class="invalid-feedback">
+              Debe aceptar los términos y condiciones
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary goticColor" type="submit">Subscribete</button>
+        </div>
+      </form>
+      </div>
+
+    </main>
+    <footer id="contacto" class="container p-4 rounded">
+      <div class=" row d-lg-flex justify-content-between align-items-center">
+        <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
+          <img class="w-50 justify-content-center align-items-center" src="img/logo.png" alt="logo">
+        </div>
+        <div class="col-lg-3 col-sm-12 copyright mt-2">
+          <p class="text-center">Gothic Unicorn. 2022. Ilerna Sevilla</p>
+        </div>
+        <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
+          <ul class="d-flex gap-3 list-unstyled">
+            <li><i class="bi bi-facebook"></i></li>
+            <li><i class="bi bi-twitter"></i></li>
+            <li><i class="bi bi-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

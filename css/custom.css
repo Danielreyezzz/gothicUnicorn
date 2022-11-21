@@ -1,0 +1,84 @@
+/*--GLOBALES-- */
+:root {
+  --purple: #de81fd;
+  --black: #0d0813;
+  --grey: #474c59;
+  --white: #d5dbe5;
+  --pureBlack: #000000;
+
+  --tituloFont: "Rye", cursive;
+}
+*{
+    font-family: var(--tituloFont);
+}
+a, button {
+  font-size: 2em;
+  font-family: var(--tituloFont);
+  text-decoration: none;
+}
+
+.goticColor{
+  background-color: var(--purple)!important;
+  
+}
+
+/*--HEADER Y NAV-- */
+
+.cabeza {
+    background-image: url(../img/valla-bg.webp);
+    background-size: 50%;
+    padding-top: 4rem;
+
+}
+.logo {
+  width: 25%;
+  height: auto;
+  margin: 2% 0;
+  
+}
+#navbar{
+  margin-bottom: 4rem;
+  width: 100%;
+  position:fixed;
+  transition: 0.5s;
+  z-index: 2000;
+}
+
+
+/*--MAIN-- */
+
+main{
+  background: rgb(61,75,138);
+background: linear-gradient(45deg, rgba(61,75,138,0.2945553221288515) 0%, rgba(121,20,208,1) 43%, rgba(204,21,219,0.5494572829131652) 100%, rgba(255,0,0,1) 100%);
+}
+main img{
+  width: 65%;
+  border-radius: 2em;
+}
+.cartaBorde{
+  border: 0!important;
+  padding: 0!important;
+  margin: 1em!important;
+}
+.formulario{
+  border-radius: 1em;
+
+}
+
+
+/*--MEDIA QUERIES-- */
+
+@media screen and (max-width: 780px) {
+  .logo {
+    width: 80%!important;
+  }
+  main img{
+    width: 80%;
+  }
+  .formulario{
+    width: 95%!important;
+  }
+}
+
+
+
